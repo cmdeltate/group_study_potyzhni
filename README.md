@@ -1,5 +1,8 @@
 # group_study_potyzhni
 Іменники й дієслова
+1) Bike | fee_per_min()
+2) ElectricBike | kind()
+3) 
  Картки класів
 1.
 1) клас Bike. Конструктор (plate). Метод fee_per_min() повертає ціну за хвилину. Метод kind() повертає тип велосипеда
