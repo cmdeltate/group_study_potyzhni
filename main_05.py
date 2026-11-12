@@ -64,5 +64,4 @@ def main():
     print(f"Виручка мережі: {network.total_revenue()} грн")
 
 
-if name == "main":
-    main()
+main()
