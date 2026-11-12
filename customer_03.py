@@ -7,7 +7,7 @@ class Customer:
         if time <= 0:
             raise ValueError("Час має бути додатним")  # перевірка часу
 
-        bike = station_from.take_bike(bike_type)  # забираємо байк зі станції
+        bike = station_from.take_bike(bike_kind)  # забираємо байк зі станції
         if bike is None:
             raise ValueError("На станції немає вільного велосипеда такого типу")
 
