@@ -7,7 +7,7 @@ class Rental_Network():
         pass
 
     def register_payment(self, amount):
-        # Збільшує загальний заробіток мережі на суму amount (вартість поїздки).
+        # Збільшує загальний заробіток мережі на суму вартості поїздки amount.
         pass
 
     def bikes_per_station(self):
