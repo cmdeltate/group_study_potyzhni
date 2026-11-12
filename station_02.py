@@ -18,6 +18,7 @@ class Station:
         if bike_type == None:
             return random.choice(self.bikes)
         for bike in self.bikes:
+            bike_type = bike.kind
             if bike.bike_type == bike_type:
                 self.bikes.remove(bike)
                 return bike
