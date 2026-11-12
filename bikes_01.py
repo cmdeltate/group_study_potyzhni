@@ -1,26 +1,31 @@
 class Bike:
     def __init__(self, plate):
-        pass
+        self.plate = plate
     def kind(self):
-        pass
+        return "Звичайний"
     def fee_per_min(self):
-        pass
+        return 2
     def is_ready(self):
-        pass
+        return True
     def ride(self, minutes):
         pass
+    
 class ElectricBike(Bike):
-    def __init__(self, plate, battery=100)
-        pass
+    def __init__(self, plate, battery=100):
+        super().__init__(plate)
+        self.battery = battery
+        self.minus_battery_per_min = 2
     def kind(self):
-        pass
+        return "Електро"
     def fee_per_min(self):
-        pass
+        return 5
     def is_ready(self):
-        pass
-    def battery(self):
-        pass
+        if self.battery > 20:
+            return True
+        return False
+    def battery_persent(self):
+        return self.battery
     def recharge(self):
-        pass
+        self.battery = 100
     def ride(self, minutes):
-        pass
+        self.battery -= minutes * self.minus_battery_per_min
