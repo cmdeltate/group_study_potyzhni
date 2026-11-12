@@ -7,8 +7,7 @@ class Bike:
         return 2
     def is_ready(self):
         return True
-    def ride(self, minutes):
-        pass
+    
     
 class ElectricBike(Bike):
     def __init__(self, plate, battery=100):
@@ -27,5 +26,4 @@ class ElectricBike(Bike):
         return self.battery
     def recharge(self):
         self.battery = 100
-    def ride(self, minutes):
-        self.battery -= max(0, minutes * self.minus_battery_per_min)
+    
