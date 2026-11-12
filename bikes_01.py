@@ -28,4 +28,4 @@ class ElectricBike(Bike):
     def recharge(self):
         self.battery = 100
     def ride(self, minutes):
-        self.battery -= minutes * self.minus_battery_per_min
+        self.battery -= max(0, minutes * self.minus_battery_per_min)
