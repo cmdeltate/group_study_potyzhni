@@ -1,11 +1,17 @@
 class Bike:
-    def __init__(self, plate, battery=100):
+    def __init__(self, plate):
         pass
     def kind(self):
         pass
     def fee_per_min(self):
         pass
+    def is_ready(self):
+        pass
+    def ride(self, minutes):
+        pass
 class ElectricBike(Bike):
+    def __init__(self, plate, battery=100)
+        pass
     def kind(self):
         pass
     def fee_per_min(self):
