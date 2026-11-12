@@ -18,10 +18,10 @@ class Station:
         if bike_type == None:
             return random.choice(self.bikes)
         for bike in self.bikes:
-            bike_type = bike.kind
-            if bike.bike_type == bike_type:
+            if bike.is_ready() and (bike_type is None or bike.kind() == bike_type):
                 self.bikes.remove(bike)
                 return bike
+        return None
 
     def bikes_count(self) -> int:
         """Повертає кількість велосипедів, які зараз на станції"""
