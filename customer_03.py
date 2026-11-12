@@ -4,3 +4,6 @@ class Client:
 
     def ride(self, station_from, bike_number, time, station_to):
         pass
+
+    def add_money(self, amount):
+        pass
