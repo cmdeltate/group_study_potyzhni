@@ -30,4 +30,4 @@ class Customer:
         if amount <= 0:
             raise ValueError("Сума поповнення має бути додатною")
         self.balance += amount
-        return self.balance
+        return self.balance     #поповнення рахунку
